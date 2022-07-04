@@ -1,0 +1,23 @@
+<<<<<<< HEAD:storage/framework/cache/a2/ad/a2ad799edc7936c57452e639363bcce267e65ca7
+1656913061a:1:{s:9:"error.htm";a:8:{s:8:"fileName";s:9:"error.htm";s:7:"content";s:252:"title = "Error page (500)"
+=======
+<<<<<<< HEAD:storage/framework/cache/d5/00/d500ab5b8520e18b41d4f66e1d092a3f14f2659c
+1656911857a:1:{s:9:"error.htm";a:8:{s:8:"fileName";s:9:"error.htm";s:7:"content";s:252:"title = "Error page (500)"
+=======
+1656911642a:1:{s:9:"error.htm";a:8:{s:8:"fileName";s:9:"error.htm";s:7:"content";s:252:"title = "Error page (500)"
+>>>>>>> 5d8ac3570f78d9c5e9db71020175b6d3a030be7b:storage/framework/cache/a2/ad/a2ad799edc7936c57452e639363bcce267e65ca7
+>>>>>>> 3e0601e3633ed7eecf4909500e8566ad2ba1fda4:storage/framework/cache/d5/00/d500ab5b8520e18b41d4f66e1d092a3f14f2659c
+url = "/error"
+layout = "default"
+==
+<div class="jumbotron">
+    <div class="container">
+        <h1>Error</h1>
+        <p>We're sorry, but something went wrong and the page cannot be displayed.</p>
+    </div>
+</div>";s:5:"mtime";i:1656906774;s:6:"markup";s:184:"<div class="jumbotron">
+    <div class="container">
+        <h1>Error</h1>
+        <p>We're sorry, but something went wrong and the page cannot be displayed.</p>
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:16:"Error page (500)";s:3:"url";s:6:"/error";s:6:"layout";s:7:"default";}}

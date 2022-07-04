@@ -2,10 +2,9 @@
   'october\\demo\\Plugin' => 'plugins\\october\\demo\\Plugin.php',
   'backend\\Controllers\\index' => 'modules\\backend\\controllers\\index.php',
   'backend\\Controllers\\auth' => 'modules\\backend\\controllers\\auth.php',
-  'cms\\Controllers\\index' => 'modules\\cms\\controllers\\index.php',
-  'October\\Demo\\Components\\Todo' => 'plugins\\october\\demo\\components\\Todo.php',
   'system\\Controllers\\settings' => 'modules\\system\\controllers\\settings.php',
   'system\\Controllers\\updates' => 'modules\\system\\controllers\\updates.php',
+<<<<<<< HEAD
   'rainlab\\blog\\Plugin' => 'plugins\\rainlab\\blog\\Plugin.php',
   'RainLab\\Blog\\Models\\Post' => 'plugins\\rainlab\\blog\\models\\Post.php',
   'RainLab\\Blog\\Classes\\TagProcessor' => 'plugins\\rainlab\\blog\\classes\\TagProcessor.php',
@@ -37,4 +36,9 @@
   'RainLab\\Pages\\Classes\\MenuItem' => 'plugins\\rainlab\\pages\\classes\\MenuItem.php',
   'Rainlab\\Pages\\FormWidgets\\MenuItemSearch' => 'plugins\\rainlab\\pages\\formwidgets\\MenuItemSearch.php',
   'RainLab\\Pages\\Classes\\MenuItemReference' => 'plugins\\rainlab\\pages\\classes\\MenuItemReference.php',
+=======
+  'peterhegman\\slickslider\\Plugin' => 'plugins\\peterhegman\\slickslider\\Plugin.php',
+  'peterhegman\\slickslider\\Controllers\\slideshows' => 'plugins\\peterhegman\\slickslider\\controllers\\slideshows.php',
+  'PeterHegman\\SlickSlider\\Models\\SlideShows' => 'plugins\\peterhegman\\slickslider\\models\\SlideShows.php',
+>>>>>>> 3e0601e3633ed7eecf4909500e8566ad2ba1fda4
 );
