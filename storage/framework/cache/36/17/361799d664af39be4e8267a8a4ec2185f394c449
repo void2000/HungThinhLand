@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/36/17/361799d664af39be4e8267a8a4ec2185f394c449
 1656911857a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:3752:"<div class="container container-xl">
+=======
+1656911642a:1:{s:15:"site/footer.htm";a:5:{s:8:"fileName";s:15:"site/footer.htm";s:7:"content";s:3752:"<div class="container container-xl">
+>>>>>>> 5d8ac3570f78d9c5e9db71020175b6d3a030be7b:storage/framework/cache/1d/54/1d54b72a860efba24dabb267ff9f0a8638e494de
     <div class="row">
         <div class="col-lg col-md-4 col-12 mb-7 mb-lg-0">
             <h3 class="fs-20 mb-3">Company</h3>

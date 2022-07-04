@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/c5/c4/c5c449e790460da5a92f43eebcb04e9864e51be8
 1656911857a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:70299:"title = "Demonstration"
+=======
+1656911642a:1:{s:8:"home.htm";a:8:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:70299:"title = "Demonstration"
+>>>>>>> 5d8ac3570f78d9c5e9db71020175b6d3a030be7b:storage/framework/cache/e4/51/e451bf9f6b111679eb49f57e361b66e765348a2d
 url = "/"
 layout = "default"
 ==
