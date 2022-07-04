@@ -36,21 +36,26 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
     {
         $macros = $this->macros;
         // line 1
-        echo "<!-- Nav -->
-<div class=\"topbar bg-primary\">
-    <div class=\"container\">
-        <p class=\"mb-0 fs-16 font-weight-600 text-white text-center\">Free shipping on all U.S. orders \$50+</p>
-    </div>
-</div>
-<div class=\"sticky-area bg-white\">
+        echo "<div class=\"sticky-area bg-white\">
     <div class=\"container container-xxl\">
         <nav class=\"navbar navbar-expand-xl px-0 d-block\">
             <div class=\"d-none d-xl-block\">
                 <div class=\"d-flex align-items-center flex-nowrap\">
                     <div class=\"w-50\">
+                        <div
+                            class=\"d-flex mt-3 mt-xl-0 align-items-center w-100 justify-content-start ml-xxl-12\">
+                            <a class=\"navbar-brand mw-184px d-inline-block py-0\" href=\"index.html\">
+                                <img src=\"";
+        // line 10
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/logo.png");
+        echo "\"  width=\"93px\" alt=\"olmish\">
+                            </a>
+                        </div>
+                    </div>
+                    <div class=\"mx-auto flex-shrink-0 px-10\">
                         <ul class=\"navbar-nav hover-menu main-menu px-0 mx-xl-n5\">
                             <li aria-haspopup=\"true\" aria-expanded=\"false\"
-                                class=\"nav-item dropdown-item-home dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5\">
+                                class=\"nav-item dropdown-item-home dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-4\">
                                 <a class=\"nav-link dropdown-toggle p-0\" href=\"index.html\"
                                     data-toggle=\"dropdown\">
                                     Home
@@ -160,7 +165,7 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
                                 </div>
                             </li>
                             <li aria-haspopup=\"true\" aria-expanded=\"false\"
-                                class=\"nav-item dropdown-item-shop dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5\">
+                                class=\"nav-item dropdown-item-shop dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-4\">
                                 <a class=\"nav-link dropdown-toggle p-0\" href=\"store.html\"
                                     data-toggle=\"dropdown\">
                                     Shop
@@ -307,7 +312,7 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
                                             <div class=\"col h-100\">
                                                 <div class=\"card border-0 mt-2\">
                                                     <img src=\"";
-        // line 271
+        // line 273
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/bg-mega-menu.jpg");
         echo "\" alt=\"bg mega menu\"
                                                         class=\"card-img\">
@@ -332,7 +337,7 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
                                 </div>
                             </li>
                             <li aria-haspopup=\"true\" aria-expanded=\"false\"
-                                class=\"nav-item dropdown-item-pages dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5\">
+                                class=\"nav-item dropdown-item-pages dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-4\">
                                 <a class=\"nav-link dropdown-toggle p-0\" href=\"#\" data-toggle=\"dropdown\">
                                     Pages
                                     <span class=\"caret\"></span>
@@ -383,7 +388,7 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
                                 </ul>
                             </li>
                             <li aria-haspopup=\"true\" aria-expanded=\"false\"
-                                class=\"nav-item dropdown-item-blog dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5\">
+                                class=\"nav-item dropdown-item-blog dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-4\">
                                 <a class=\"nav-link dropdown-toggle p-0\" href=\"#\" data-toggle=\"dropdown\">
                                     Blog
                                     <span class=\"caret\"></span>
@@ -436,7 +441,7 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
                                 </ul>
                             </li>
                             <li aria-haspopup=\"true\" aria-expanded=\"false\"
-                                class=\"nav-item dropdown-item-docs dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5\">
+                                class=\"nav-item dropdown-item-docs dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-4\">
                                 <a class=\"nav-link dropdown-toggle p-0\" href=\"#\" data-toggle=\"dropdown\">
                                     Docs
                                     <span class=\"caret\"></span>
@@ -499,52 +504,31 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
                             </li>
                         </ul>
                     </div>
-                    <div class=\"mx-auto flex-shrink-0 px-10\">
-                        <div class=\"d-flex mt-3 mt-xl-0 align-items-center w-100 justify-content-center\">
-                            <a class=\"navbar-brand mx-auto d-inline-block py-0\" href=\"index.html\">
-                                <img src=\"";
-        // line 464
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/logo-black.png");
-        echo "\" alt=\"Glowing\">
-                            </a>
-                        </div>
-                    </div>
                     <div class=\"w-50\">
                         <div class=\"d-flex align-items-center justify-content-end\">
-                            <a href=\"#search-popup\" data-gtf-mfp=\"true\"
+                            <!-- <a href=\"#search-popup\" data-gtf-mfp=\"true\"
                                 data-mfp-options='{\"type\":\"inline\",\"focus\": \"#keyword\",\"mainClass\": \"mfp-search-form mfp-move-from-top mfp-align-top\"}'
                                 class=\"nav-search d-flex align-items-center pr-3\">
                                 <svg class=\"icon icon-magnifying-glass-light fs-28\">
                                     <use xlink:href=\"#icon-magnifying-glass-light\"></use>
                                 </svg>
-                            </a>
+                            </a> -->
                             <ul
                                 class=\"navbar-nav flex-row justify-content-xl-end d-flex flex-wrap text-body py-0 navbar-right\">
                                 <li class=\"nav-item\">
-                                    <a class=\"nav-link pr-3 py-0\" href=\"#\" data-toggle=\"modal\"
-                                        data-target=\"#sign-in\">
-                                        <svg class=\"icon icon-user-light\">
-                                            <use xlink:href=\"#icon-user-light\"></use>
-                                        </svg>
+                                    <a class=\"nav-link pr-3 py-0\" href=\"#\"    >
+                                        <i class=\"fab fa-facebook-f a\"></i>
                                     </a>
                                 </li>
                                 <li class=\"nav-item\">
-                                    <a class=\"nav-link position-relative px-4 py-0\" href=\"wishlist.html\">
-                                        <svg class=\"icon icon-star-light\">
-                                            <use xlink:href=\"#icon-star-light\"></use>
-                                        </svg>
-                                        <span class=\"position-absolute number\">0</span></a>
+                                    <a class=\"nav-link pr-3 py-0\" href=\"#\"    >
+                                        <i class=\"fab fa-instagram a\"></i>
+                                    </a>  
                                 </li>
                                 <li class=\"nav-item\">
-                                    <a class=\"nav-link position-relative px-4 menu-cart py-0 d-inline-flex align-items-center mr-n2\"
-                                        href=\"#\" data-canvas=\"true\"
-                                        data-canvas-options='{\"container\":\".cart-canvas\"}'>
-                                        <span class=\"mr-2 font-weight-bold fs-15\">\$0.00</span>
-                                        <svg class=\"icon icon-shopping-bag-open-light\">
-                                            <use xlink:href=\"#icon-shopping-bag-open-light\"></use>
-                                        </svg>
-                                        <span class=\"position-absolute number\">0</span>
-                                    </a>
+                                    <a class=\"nav-link pr-3 py-0\" href=\"#\"    >
+                                        <i class=\"fab fa-youtube a\"></i>
+                                    </a>  
                                 </li>
                             </ul>
                         </div>
@@ -556,10 +540,11 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
                     data-canvas-options='{\"width\":\"250px\",\"container\":\".sidenav\"}'>
                     <span class=\"fs-24 toggle-icon\"></span>
                 </button>
-                <div class=\"mx-auto\"><a class=\"navbar-brand d-inline-block mr-0 py-5\" href=\"index.html\">
+                <div class=\"mx-auto\"><a class=\"navbar-brand mw-184px d-inline-block mr-0 py-5\"
+                        href=\"index.html\">
                         <img src=\"";
-        // line 516
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/logo-black.png");
+        // line 501
+        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/logo-black-02.png");
         echo "\" alt=\"Glowing\">
                     </a></div>
                 <a href=\"#search-popup\" data-gtf-mfp=\"true\"
@@ -587,26 +572,28 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
 
     public function getDebugInfo()
     {
-        return array (  562 => 516,  507 => 464,  311 => 271,  39 => 1,);
+        return array (  547 => 501,  316 => 273,  50 => 10,  39 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<!-- Nav -->
-<div class=\"topbar bg-primary\">
-    <div class=\"container\">
-        <p class=\"mb-0 fs-16 font-weight-600 text-white text-center\">Free shipping on all U.S. orders \$50+</p>
-    </div>
-</div>
-<div class=\"sticky-area bg-white\">
+        return new Source("<div class=\"sticky-area bg-white\">
     <div class=\"container container-xxl\">
         <nav class=\"navbar navbar-expand-xl px-0 d-block\">
             <div class=\"d-none d-xl-block\">
                 <div class=\"d-flex align-items-center flex-nowrap\">
                     <div class=\"w-50\">
+                        <div
+                            class=\"d-flex mt-3 mt-xl-0 align-items-center w-100 justify-content-start ml-xxl-12\">
+                            <a class=\"navbar-brand mw-184px d-inline-block py-0\" href=\"index.html\">
+                                <img src=\"{{'assets/images/logo.png'|theme}}\"  width=\"93px\" alt=\"olmish\">
+                            </a>
+                        </div>
+                    </div>
+                    <div class=\"mx-auto flex-shrink-0 px-10\">
                         <ul class=\"navbar-nav hover-menu main-menu px-0 mx-xl-n5\">
                             <li aria-haspopup=\"true\" aria-expanded=\"false\"
-                                class=\"nav-item dropdown-item-home dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5\">
+                                class=\"nav-item dropdown-item-home dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-4\">
                                 <a class=\"nav-link dropdown-toggle p-0\" href=\"index.html\"
                                     data-toggle=\"dropdown\">
                                     Home
@@ -716,7 +703,7 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
                                 </div>
                             </li>
                             <li aria-haspopup=\"true\" aria-expanded=\"false\"
-                                class=\"nav-item dropdown-item-shop dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5\">
+                                class=\"nav-item dropdown-item-shop dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-4\">
                                 <a class=\"nav-link dropdown-toggle p-0\" href=\"store.html\"
                                     data-toggle=\"dropdown\">
                                     Shop
@@ -885,7 +872,7 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
                                 </div>
                             </li>
                             <li aria-haspopup=\"true\" aria-expanded=\"false\"
-                                class=\"nav-item dropdown-item-pages dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5\">
+                                class=\"nav-item dropdown-item-pages dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-4\">
                                 <a class=\"nav-link dropdown-toggle p-0\" href=\"#\" data-toggle=\"dropdown\">
                                     Pages
                                     <span class=\"caret\"></span>
@@ -936,7 +923,7 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
                                 </ul>
                             </li>
                             <li aria-haspopup=\"true\" aria-expanded=\"false\"
-                                class=\"nav-item dropdown-item-blog dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5\">
+                                class=\"nav-item dropdown-item-blog dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-4\">
                                 <a class=\"nav-link dropdown-toggle p-0\" href=\"#\" data-toggle=\"dropdown\">
                                     Blog
                                     <span class=\"caret\"></span>
@@ -989,7 +976,7 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
                                 </ul>
                             </li>
                             <li aria-haspopup=\"true\" aria-expanded=\"false\"
-                                class=\"nav-item dropdown-item-docs dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-5\">
+                                class=\"nav-item dropdown-item-docs dropdown py-2 py-xl-7 sticky-py-xl-6 px-0 px-xl-4\">
                                 <a class=\"nav-link dropdown-toggle p-0\" href=\"#\" data-toggle=\"dropdown\">
                                     Docs
                                     <span class=\"caret\"></span>
@@ -1052,49 +1039,31 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
                             </li>
                         </ul>
                     </div>
-                    <div class=\"mx-auto flex-shrink-0 px-10\">
-                        <div class=\"d-flex mt-3 mt-xl-0 align-items-center w-100 justify-content-center\">
-                            <a class=\"navbar-brand mx-auto d-inline-block py-0\" href=\"index.html\">
-                                <img src=\"{{'assets/images/logo-black.png'|theme}}\" alt=\"Glowing\">
-                            </a>
-                        </div>
-                    </div>
                     <div class=\"w-50\">
                         <div class=\"d-flex align-items-center justify-content-end\">
-                            <a href=\"#search-popup\" data-gtf-mfp=\"true\"
+                            <!-- <a href=\"#search-popup\" data-gtf-mfp=\"true\"
                                 data-mfp-options='{\"type\":\"inline\",\"focus\": \"#keyword\",\"mainClass\": \"mfp-search-form mfp-move-from-top mfp-align-top\"}'
                                 class=\"nav-search d-flex align-items-center pr-3\">
                                 <svg class=\"icon icon-magnifying-glass-light fs-28\">
                                     <use xlink:href=\"#icon-magnifying-glass-light\"></use>
                                 </svg>
-                            </a>
+                            </a> -->
                             <ul
                                 class=\"navbar-nav flex-row justify-content-xl-end d-flex flex-wrap text-body py-0 navbar-right\">
                                 <li class=\"nav-item\">
-                                    <a class=\"nav-link pr-3 py-0\" href=\"#\" data-toggle=\"modal\"
-                                        data-target=\"#sign-in\">
-                                        <svg class=\"icon icon-user-light\">
-                                            <use xlink:href=\"#icon-user-light\"></use>
-                                        </svg>
+                                    <a class=\"nav-link pr-3 py-0\" href=\"#\"    >
+                                        <i class=\"fab fa-facebook-f a\"></i>
                                     </a>
                                 </li>
                                 <li class=\"nav-item\">
-                                    <a class=\"nav-link position-relative px-4 py-0\" href=\"wishlist.html\">
-                                        <svg class=\"icon icon-star-light\">
-                                            <use xlink:href=\"#icon-star-light\"></use>
-                                        </svg>
-                                        <span class=\"position-absolute number\">0</span></a>
+                                    <a class=\"nav-link pr-3 py-0\" href=\"#\"    >
+                                        <i class=\"fab fa-instagram a\"></i>
+                                    </a>  
                                 </li>
                                 <li class=\"nav-item\">
-                                    <a class=\"nav-link position-relative px-4 menu-cart py-0 d-inline-flex align-items-center mr-n2\"
-                                        href=\"#\" data-canvas=\"true\"
-                                        data-canvas-options='{\"container\":\".cart-canvas\"}'>
-                                        <span class=\"mr-2 font-weight-bold fs-15\">\$0.00</span>
-                                        <svg class=\"icon icon-shopping-bag-open-light\">
-                                            <use xlink:href=\"#icon-shopping-bag-open-light\"></use>
-                                        </svg>
-                                        <span class=\"position-absolute number\">0</span>
-                                    </a>
+                                    <a class=\"nav-link pr-3 py-0\" href=\"#\"    >
+                                        <i class=\"fab fa-youtube a\"></i>
+                                    </a>  
                                 </li>
                             </ul>
                         </div>
@@ -1106,8 +1075,9 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
                     data-canvas-options='{\"width\":\"250px\",\"container\":\".sidenav\"}'>
                     <span class=\"fs-24 toggle-icon\"></span>
                 </button>
-                <div class=\"mx-auto\"><a class=\"navbar-brand d-inline-block mr-0 py-5\" href=\"index.html\">
-                        <img src=\"{{'assets/images/logo-black.png'|theme}}\" alt=\"Glowing\">
+                <div class=\"mx-auto\"><a class=\"navbar-brand mw-184px d-inline-block mr-0 py-5\"
+                        href=\"index.html\">
+                        <img src=\"{{'assets/images/logo-black-02.png'|theme}}\" alt=\"Glowing\">
                     </a></div>
                 <a href=\"#search-popup\" data-gtf-mfp=\"true\"
                     data-mfp-options='{\"type\":\"inline\",\"focus\": \"#keyword\",\"mainClass\": \"mfp-search-form mfp-move-from-top mfp-align-top\"}'
@@ -1125,7 +1095,7 @@ class __TwigTemplate_fab65fecf68e2905683b487e6089a2580bc16afcadd05c85daa39730195
     public function checkSecurity()
     {
         static $tags = array();
-        static $filters = array("theme" => 271);
+        static $filters = array("theme" => 10);
         static $functions = array();
 
         try {
