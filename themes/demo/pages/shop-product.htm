@@ -62,15 +62,31 @@ Default Sorting
 <div class="container container-xl">
 <div class="row">
 
+{% set obProductList = ProductList.make().sort(ProductList.getSorting()).active() %}
 
+
+{% if obProductList is not empty() %}
+
+{% for obProduct in obProductList %}
+
+{% set obOffer = obProduct.offer.active().first() %}
 <div class="col-xl-3 col-lg-4 col-md-6 mb-6 mb-lg-7">
 <div class="card border-0 product" data-animate="fadeInUp">
 <div class="position-relative">
-<img src="images/product-01.jpg" alt="Facial cleanser">
+{% if obProduct.preview_image is not empty %}
+<img src="{{ obProduct.preview_image.path }}" alt="{{ obProduct.preview_image.description }}">
+{% endif %}
 <div class="card-img-overlay d-flex p-3">
-<div>
-<span class="badge badge-primary">-20%</span>
+
+
+<!-- phan khuyen mai -->
+{% if obOffer.old_price_value > 0 %}     
+<div>  
+<span class="badge badge-primary">{{ ((obOffer.old_price - obOffer.price)/obOffer.old_price)*100  }}%</span>
 </div>
+{% endif %}
+<!-- end phan khuyen mai -->
+
 <div class="my-auto w-100 content-change-vertical">
 <a href="#" data-toggle="tooltip" data-placement="left" title="View products" class="add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2">
 <svg class="icon icon-shopping-bag-open-light fs-24">
@@ -97,12 +113,21 @@ Default Sorting
 </div>
 </div>
 </div>
+
 <div class="card-body pt-4 text-center">
+{# phan gia san pham #}
+
 <p class="card-text font-weight-bold fs-16 mb-1 text-secondary">
-<span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">$39.00</span>
-<span>$29.00</span>
+
+{% if obOffer.old_price_value > 0 %}    
+<span class="fs-13 font-weight-500 text-decoration-through text-body pr-1">{{ obOffer.old_price }} {{ obOffer.currency }}</span>
+{% endif %}
+
+<span>{{ obOffer.price }} {{ obOffer.currency }}</span>
 </p>
-<h2 class="card-title fs-15 font-weight-500 mb-2"><a href="product-page-01.html">Facial cleanser</a></h2>
+{# end phan gia san pham #}
+
+<h2 class="card-title fs-15 font-weight-500 mb-2"><a href="product-page-01.html">{{ obProduct.name }}</a></h2>
 <div class="d-flex align-items-center justify-content-center flex-wrap">
 <ul class="list-inline mb-0 lh-1">
 <li class="list-inline-item fs-12 text-primary mr-0"><i class="fas fa-star"></i>
@@ -121,6 +146,8 @@ Default Sorting
 </div>
 </div>
 </div>
+{% endfor %}
+{% endif %}
 
 
 

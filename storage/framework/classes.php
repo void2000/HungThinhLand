@@ -143,4 +143,13 @@
   'Lovata\\Shopaholic\\Classes\\Store\\CategoryListStore' => 'plugins\\lovata\\shopaholic\\classes\\store\\CategoryListStore.php',
   'Lovata\\Shopaholic\\Classes\\Store\\Category\\TopLevelListStore' => 'plugins\\lovata\\shopaholic\\classes\\store\\category\\TopLevelListStore.php',
   'Lovata\\Shopaholic\\Classes\\Store\\Category\\ActiveListStore' => 'plugins\\lovata\\shopaholic\\classes\\store\\category\\ActiveListStore.php',
+  'Lovata\\Shopaholic\\Classes\\Store\\BrandListStore' => 'plugins\\lovata\\shopaholic\\classes\\store\\BrandListStore.php',
+  'Lovata\\Shopaholic\\Classes\\Store\\Brand\\SortingListStore' => 'plugins\\lovata\\shopaholic\\classes\\store\\brand\\SortingListStore.php',
+  'Lovata\\Shopaholic\\Classes\\Store\\Brand\\ListByCategoryStore' => 'plugins\\lovata\\shopaholic\\classes\\store\\brand\\ListByCategoryStore.php',
+  'Lovata\\Shopaholic\\Classes\\Store\\Brand\\ActiveListStore' => 'plugins\\lovata\\shopaholic\\classes\\store\\brand\\ActiveListStore.php',
+  'Lovata\\Shopaholic\\Classes\\Collection\\OfferCollection' => 'plugins\\lovata\\shopaholic\\classes\\collection\\OfferCollection.php',
+  'Lovata\\Shopaholic\\Classes\\Helper\\PriceTypeHelper' => 'plugins\\lovata\\shopaholic\\classes\\helper\\PriceTypeHelper.php',
+  'rainlab\\blog\\Controllers\\posts' => 'plugins\\rainlab\\blog\\controllers\\posts.php',
+  'RainLab\\Blog\\Models\\PostImport' => 'plugins\\rainlab\\blog\\models\\PostImport.php',
+  'RainLab\\Blog\\Models\\PostExport' => 'plugins\\rainlab\\blog\\models\\PostExport.php',
 );
