@@ -46,41 +46,40 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["slider"] ?? null), "slides", [], "any", false, false, true, 5), "slideShows", [], "any", false, false, true, 5), "slide_show_content", [], "any", false, false, true, 5));
         foreach ($context['_seq'] as $context["_key"] => $context["slide"]) {
             // line 6
-            if ((twig_get_attribute($this->env, $this->source, $context["slide"], "slide_link", [], "any", false, false, true, 6) != "")) {
-                // line 7
-                echo "<div class=\"box px-0\">
+            echo "
+<div class=\"box px-0\">
     <div class=\"bg-img-cover-center py-12 py-lg-17\"
         style=\"background-image: url(";
-                // line 9
-                echo $this->extensions['System\Twig\Extension']->mediaFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["slide"], "slide_image", [], "any", false, false, true, 9), 9, $this->source));
-                echo "\">
+            // line 9
+            echo $this->extensions['System\Twig\Extension']->mediaFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["slide"], "slide_image", [], "any", false, false, true, 9), 9, $this->source));
+            echo "\">
         <div class=\"container container-xl pt-6 pb-7\">
             ";
-                // line 11
-                if ((twig_get_attribute($this->env, $this->source, $context["slide"], "slide_title", [], "any", false, false, true, 11) || twig_get_attribute($this->env, $this->source, $context["slide"], "slide_description", [], "any", false, false, true, 11))) {
-                    // line 12
-                    echo "            <div data-animate=\"fadeInDown\">
+            // line 11
+            if ((twig_get_attribute($this->env, $this->source, $context["slide"], "slide_title", [], "any", false, false, true, 11) || twig_get_attribute($this->env, $this->source, $context["slide"], "slide_description", [], "any", false, false, true, 11))) {
+                // line 12
+                echo "            <div data-animate=\"fadeInDown\">
                 <p class=\"text-secondary mb-5 text-uppercase font-weight-600\"></p>
                 <h1 class=\"mb-4 fs-56 lh-128\">";
-                    // line 14
-                    echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["slide"], "slide_title", [], "any", false, false, true, 14), 14, $this->source), "html", null, true);
-                    echo "</h1>
+                // line 14
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["slide"], "slide_title", [], "any", false, false, true, 14), 14, $this->source), "html", null, true);
+                echo "</h1>
                 <p class=\"fs-18 lh-166 mb-7\" style=\"max-width: 454px\">";
-                    // line 15
-                    echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["slide"], "slide_description", [], "any", false, false, true, 15), 15, $this->source), "html", null, true);
-                    echo "</p>
+                // line 15
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["slide"], "slide_description", [], "any", false, false, true, 15), 15, $this->source), "html", null, true);
+                echo "</p>
             </div>
             ";
-                }
-                // line 18
-                echo "
+            }
+            // line 18
+            echo "
             <!--<a href=\"shop-page-04.html\" class=\"btn btn-secondary rounded bg-hover-primary border-0\"
                 data-animate=\"fadeInUp\">Shop Now</a>-->
         </div>
     </div>
 </div>
+
 ";
-            }
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['slide'], $context['_parent'], $context['loop']);
@@ -1204,7 +1203,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
 
     public function getDebugInfo()
     {
-        return array (  1186 => 1046,  1178 => 1041,  1170 => 1036,  1162 => 1031,  1154 => 1026,  1134 => 1009,  1120 => 998,  1036 => 917,  960 => 844,  887 => 774,  814 => 704,  741 => 634,  665 => 561,  645 => 544,  616 => 518,  603 => 508,  590 => 498,  500 => 411,  481 => 395,  411 => 328,  344 => 264,  279 => 202,  215 => 141,  148 => 77,  118 => 50,  98 => 33,  89 => 26,  76 => 18,  70 => 15,  66 => 14,  62 => 12,  60 => 11,  55 => 9,  51 => 7,  49 => 6,  45 => 5,  39 => 1,);
+        return array (  1185 => 1046,  1177 => 1041,  1169 => 1036,  1161 => 1031,  1153 => 1026,  1133 => 1009,  1119 => 998,  1035 => 917,  959 => 844,  886 => 774,  813 => 704,  740 => 634,  664 => 561,  644 => 544,  615 => 518,  602 => 508,  589 => 498,  499 => 411,  480 => 395,  410 => 328,  343 => 264,  278 => 202,  214 => 141,  147 => 77,  117 => 50,  97 => 33,  88 => 26,  75 => 18,  69 => 15,  65 => 14,  61 => 12,  59 => 11,  54 => 9,  49 => 6,  45 => 5,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -1214,7 +1213,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
 
 
 {% for slide in slider.slides.slideShows.slide_show_content %}
-{% if slide.slide_link != '' %}
+
 <div class=\"box px-0\">
     <div class=\"bg-img-cover-center py-12 py-lg-17\"
         style=\"background-image: url({{slide.slide_image|media}}\">
@@ -1232,7 +1231,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
         </div>
     </div>
 </div>
-{% endif %}
+
 {% endfor %}
 
 
@@ -2264,7 +2263,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
     
     public function checkSecurity()
     {
-        static $tags = array("for" => 5, "if" => 6);
+        static $tags = array("for" => 5, "if" => 11);
         static $filters = array("media" => 9, "escape" => 14, "theme" => 33);
         static $functions = array();
 

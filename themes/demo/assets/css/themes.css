@@ -584,8 +584,8 @@ pre code {
 .container-lg,
 .container-xl {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
     margin-right: auto;
     margin-left: auto
 }
@@ -858,7 +858,9 @@ pre code {
 .col-12 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
-    max-width: 100%
+    max-width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .order-first {
@@ -27198,15 +27200,3 @@ svg.icon {
     }
 }
 
-
-.slick-prev:before {
-    content: "<";
-    color: red;
-    font-size: 30px;
-  }
-  
-  .slick-next:before {
-    content: ">";
-    color: red;
-    font-size: 30px;
-  }

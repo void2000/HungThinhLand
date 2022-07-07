@@ -11,7 +11,7 @@ data-slick-options='{"slidesToShow": 1,"infinite":true,"autoplay":true,"dots":tr
 
 
 {% for slide in slider.slides.slideShows.slide_show_content %}
-{% if slide.slide_link != '' %}
+
 <div class="box px-0">
     <div class="bg-img-cover-center py-12 py-lg-17"
         style="background-image: url({{slide.slide_image|media}}">
@@ -29,7 +29,7 @@ data-slick-options='{"slidesToShow": 1,"infinite":true,"autoplay":true,"dots":tr
         </div>
     </div>
 </div>
-{% endif %}
+
 {% endfor %}
 
 

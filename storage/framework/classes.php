@@ -152,4 +152,6 @@
   'rainlab\\blog\\Controllers\\posts' => 'plugins\\rainlab\\blog\\controllers\\posts.php',
   'RainLab\\Blog\\Models\\PostImport' => 'plugins\\rainlab\\blog\\models\\PostImport.php',
   'RainLab\\Blog\\Models\\PostExport' => 'plugins\\rainlab\\blog\\models\\PostExport.php',
+  'peterhegman\\slickslider\\Controllers\\slideshows' => 'plugins\\peterhegman\\slickslider\\controllers\\slideshows.php',
+  'PeterHegman\\SlickSlider\\Models\\SlideShows' => 'plugins\\peterhegman\\slickslider\\models\\SlideShows.php',
 );
