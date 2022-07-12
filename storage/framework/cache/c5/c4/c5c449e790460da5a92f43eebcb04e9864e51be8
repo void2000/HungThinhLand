@@ -1,4 +1,4 @@
-1657615448a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:52643:"title = "Demonstration"
+1657618821a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:52710:"title = "Demonstration"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -24,8 +24,12 @@ data-slick-options='{"slidesToShow": 1,"infinite":true,"autoplay":true,"dots":tr
             </div>
             {% endif %}
 
-            <!--<a href="shop-page-04.html" class="btn btn-secondary rounded bg-hover-primary border-0"
-                data-animate="fadeInUp">Shop Now</a>-->
+            {% if slide.slide_link != '' %}
+            <a href="shop-page-04.html" class="btn btn-secondary rounded bg-hover-primary border-0"
+                data-animate="fadeInUp">Shop Now</a>
+            {% endif %}
+
+
         </div>
     </div>
 </div>
@@ -757,7 +761,7 @@ data-slick-options='{"slidesToShow": 1,"infinite":true,"autoplay":true,"dots":tr
 
 
 
-";s:5:"mtime";i:1657614848;s:6:"markup";s:52529:"<section class="slick-slider slider mx-0"
+";s:5:"mtime";i:1657618215;s:6:"markup";s:52596:"<section class="slick-slider slider mx-0"
 data-slick-options='{"slidesToShow": 1,"infinite":true,"autoplay":true,"dots":true,"arrows":false,"fade":false,"cssEase":"ease-in-out","speed":600}'>
 
 
@@ -775,8 +779,12 @@ data-slick-options='{"slidesToShow": 1,"infinite":true,"autoplay":true,"dots":tr
             </div>
             {% endif %}
 
-            <!--<a href="shop-page-04.html" class="btn btn-secondary rounded bg-hover-primary border-0"
-                data-animate="fadeInUp">Shop Now</a>-->
+            {% if slide.slide_link != '' %}
+            <a href="shop-page-04.html" class="btn btn-secondary rounded bg-hover-primary border-0"
+                data-animate="fadeInUp">Shop Now</a>
+            {% endif %}
+
+
         </div>
     </div>
 </div>
