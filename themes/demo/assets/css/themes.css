@@ -859,8 +859,8 @@ pre code {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .order-first {
@@ -26771,7 +26771,7 @@ input.checkbox-primary[type=checkbox] {
 }
 
 .banner-01 .card-img {
-    height: 420px
+    height: 700px
 }
 
 .banner-02 .card-img {
