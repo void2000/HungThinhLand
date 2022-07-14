@@ -52,38 +52,45 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
         style=\"background-image: url(";
             // line 9
             echo $this->extensions['System\Twig\Extension']->mediaFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["slide"], "slide_image", [], "any", false, false, true, 9), 9, $this->source));
-            echo "\">
-        <div class=\"container container-xl pt-6 pb-7\">
+            echo ")\">
+
+        <div class=\"container container-xl pt-6 pb-7 col-md-5\">
             ";
-            // line 11
-            if ((twig_get_attribute($this->env, $this->source, $context["slide"], "slide_title", [], "any", false, false, true, 11) || twig_get_attribute($this->env, $this->source, $context["slide"], "slide_description", [], "any", false, false, true, 11))) {
-                // line 12
+            // line 12
+            if ((twig_get_attribute($this->env, $this->source, $context["slide"], "slide_title", [], "any", false, false, true, 12) || twig_get_attribute($this->env, $this->source, $context["slide"], "slide_description", [], "any", false, false, true, 12))) {
+                // line 13
                 echo "            <div data-animate=\"fadeInDown\">
                 <p class=\"text-secondary mb-5 text-uppercase font-weight-600\"></p>
                 <h1 class=\"mb-4 fs-56 lh-128\">";
-                // line 14
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["slide"], "slide_title", [], "any", false, false, true, 14), 14, $this->source), "html", null, true);
+                // line 15
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["slide"], "slide_title", [], "any", false, false, true, 15), 15, $this->source), "html", null, true);
                 echo "</h1>
                 <p class=\"fs-18 lh-166 mb-7\" style=\"max-width: 454px\">";
-                // line 15
-                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["slide"], "slide_description", [], "any", false, false, true, 15), 15, $this->source), "html", null, true);
+                // line 16
+                echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["slide"], "slide_description", [], "any", false, false, true, 16), 16, $this->source), "html", null, true);
                 echo "</p>
             </div>
             ";
             }
-            // line 18
+            // line 19
             echo "
             ";
-            // line 19
-            if ((twig_get_attribute($this->env, $this->source, $context["slide"], "slide_link", [], "any", false, false, true, 19) != "")) {
-                // line 20
+            // line 20
+            if ((twig_get_attribute($this->env, $this->source, $context["slide"], "slide_link", [], "any", false, false, true, 20) != "")) {
+                // line 21
                 echo "            <a href=\"shop-page-04.html\" class=\"btn btn-secondary rounded bg-hover-primary border-0\"
                 data-animate=\"fadeInUp\">Shop Now</a>
             ";
             }
-            // line 23
-            echo "
-
+            // line 24
+            echo "        </div>
+        <div class=\"col-md-7\">
+            <p>
+                <img src=\"http://127.0.0.1:8000/storage/app/media/child-image-slide/";
+            // line 27
+            echo twig_escape_filter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["slide"], "slide_title", [], "any", false, false, true, 27), 27, $this->source), "html", null, true);
+            echo ".png\" alt=\"\">
+            </p>
         </div>
     </div>
 </div>
@@ -93,7 +100,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['slide'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 30
+        // line 34
         echo "
 
 
@@ -102,7 +109,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
 <div class=\"box px-0\">
     <div class=\"bg-img-cover-center py-12 py-lg-17\"
         style=\"background-image: url(";
-        // line 37
+        // line 41
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/bg-slider-02.jpg");
         echo ");\">
         <div class=\"container container-xl pt-6 pb-7\">
@@ -122,7 +129,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
 <div class=\"box px-0\">
     <div class=\"bg-img-cover-center py-12 py-lg-17\"
         style=\"background-image: url(";
-        // line 54
+        // line 58
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/bg-slider-03.jpg");
         echo ");\">
         <div class=\"container container-xl pt-6 pb-7\">
@@ -151,43 +158,9 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
         <div class=\"box\">
             <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                 <div class=\"position-relative\">
-                    <img src=\"";
-        // line 81
-        echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-01.jpg");
-        echo "\" alt=\"Facial cleanser\">
-                    <div class=\"card-img-overlay d-flex p-3\">
-                        <div>
-                            <span class=\"badge badge-primary\">-20%</span>
-                        </div>
-                        <div class=\"my-auto w-100 content-change-vertical\">
-                            <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"View products\"
-                                class=\"add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2\">
-                                <svg class=\"icon icon-shopping-bag-open-light fs-24\">
-                                    <use xlink:href=\"#icon-shopping-bag-open-light\"></use>
-                                </svg>
-                            </a>
-                            <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Quick view\"
-                                class=\"preview ml-auto d-md-flex align-items-center justify-content-center cursor-pointer text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2 d-none\">
-                                <span data-toggle=\"modal\" data-target=\"#quick-view\">
-                                    <svg class=\"icon icon-eye-light fs-24\">
-                                        <use xlink:href=\"#icon-eye-light\"></use>
-                                    </svg>
-                                </span>
-                            </a>
-                            <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Add to wishlist\"
-                                class=\"add-to-wishlist ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2\">
-                                <svg class=\"icon icon-star-light fs-24\">
-                                    <use xlink:href=\"#icon-star-light\"></use>
-                                </svg>
-                            </a>
-                            <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Compare\"
-                                class=\"add-to-compare ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle\">
-                                <svg class=\"icon icon-arrows-left-right-light fs-24\">
-                                    <use xlink:href=\"#icon-arrows-left-right-light\"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                    <img src=\"https://www.siogyumolcs.hu/assets/img/img-index-category-hover.jpg\" alt=\"Facial cleanser\" style=\"opacity: 0;
+                    transition: opacity .4s;\">
+                    <img src=\"https://www.siogyumolcs.hu/storage/categories/JxmHLTnGfur1tCSPOAGCS72GlfC08U6yGFHst2dg/category_small.png\" alt=\"Facial cleanser\">
                 </div>
                 <div class=\"card-body pt-4 text-center\">
                     <p class=\"card-text font-weight-bold fs-16 mb-1 text-secondary\">
@@ -215,11 +188,11 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
                 </div>
             </div>
         </div>
-        <div class=\"box\">
+        <!-- <div class=\"box\">
             <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                 <div class=\"position-relative\">
                     <img src=\"";
-        // line 145
+        // line 118
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-02.jpg");
         echo "\" alt=\"Bio-shroom Rejuvenating Serum\">
                     <div class=\"card-img-overlay d-flex p-3\">
@@ -283,7 +256,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
             <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                 <div class=\"position-relative\">
                     <img src=\"";
-        // line 206
+        // line 179
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-03.jpg");
         echo "\" alt=\"Coffee Bean Caffeine Eye Cream\">
                     <div class=\"card-img-overlay d-flex p-3\">
@@ -348,7 +321,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
             <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                 <div class=\"position-relative\">
                     <img src=\"";
-        // line 268
+        // line 241
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-04.jpg");
         echo "\" alt=\"Coffee Bean Caffeine Eye Cream\">
                     <div class=\"card-img-overlay d-flex p-3\">
@@ -415,7 +388,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
             <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                 <div class=\"position-relative\">
                     <img src=\"";
-        // line 332
+        // line 305
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-05.jpg");
         echo "\" alt=\"Facial cleanser\">
                     <div class=\"card-img-overlay d-flex p-3\">
@@ -474,20 +447,20 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 </section>
 <section class=\"pt-9 pt-lg-10\">
-<div class=\"container container-xl\">
+<div class=\" \"  >
     <div class=\"row\">
         <div class=\"col-12 col-lg-6 mb-6 mb-lg-0\">
             <div class=\"card border-0 banner banner-01 hover-zoom-in hover-shine\" data-animate=\"fadeInUp\">
                 <div class=\"card-img bg-img-cover-center\"
                     style=\"background-image: url(";
-        // line 399
+        // line 372
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/banner-01.jpg");
-        echo ");\"></div>
+        echo ");    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 50%); \" ></div>
                 <div class=\"card-img-overlay d-inline-flex flex-column p-6 p-md-8\">
                     <h6 class=\"card-subtitle mb-2 text-secondary letter-spacing-01\">NEW COLLECTION</h6>
                     <h3 class=\"card-title fs-34 lh-129\" style=\"max-width: 310px\">Intensive Glow C+ Serum
@@ -504,9 +477,9 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
             <div class=\"card border-0 banner banner-01 hover-zoom-in hover-shine\" data-animate=\"fadeInUp\">
                 <div class=\"card-img bg-img-cover-center\"
                     style=\"background-image: url(";
-        // line 415
+        // line 388
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/banner-02.jpg");
-        echo ");\"></div>
+        echo ");     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 50%);\"></div>
                 <div class=\"card-img-overlay d-inline-flex flex-column p-6 p-md-8\">
                     <h3 class=\"card-title fs-34 lh-129 mb-2\">25% off Everything</h3>
                     <p class=\"card-text text-secondary font-weight-500\" style=\"max-width: 236px;\">
@@ -533,7 +506,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
                 <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                     <div class=\"position-relative\">
                         <img src=\"";
-        // line 441
+        // line 414
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-01.jpg");
         echo "\" alt=\"Facial cleanser\">
                         <div class=\"card-img-overlay d-flex p-3\">
@@ -600,7 +573,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
                 <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                     <div class=\"position-relative\">
                         <img src=\"";
-        // line 505
+        // line 478
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-02.jpg");
         echo "\" alt=\"Bio-shroom Rejuvenating Serum\">
                         <div class=\"card-img-overlay d-flex p-3\">
@@ -664,7 +637,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
                 <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                     <div class=\"position-relative\">
                         <img src=\"";
-        // line 566
+        // line 539
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-03.jpg");
         echo "\" alt=\"Coffee Bean Caffeine Eye Cream\">
                         <div class=\"card-img-overlay d-flex p-3\">
@@ -729,7 +702,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
                 <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                     <div class=\"position-relative\">
                         <img src=\"";
-        // line 628
+        // line 601
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-04.jpg");
         echo "\" alt=\"Coffee Bean Caffeine Eye Cream\">
                         <div class=\"card-img-overlay d-flex p-3\">
@@ -796,7 +769,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
                 <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                     <div class=\"position-relative\">
                         <img src=\"";
-        // line 692
+        // line 665
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-05.jpg");
         echo "\" alt=\"Facial cleanser\">
                         <div class=\"card-img-overlay d-flex p-3\">
@@ -873,7 +846,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
 
     public function getDebugInfo()
     {
-        return array (  800 => 692,  733 => 628,  668 => 566,  604 => 505,  537 => 441,  508 => 415,  489 => 399,  419 => 332,  352 => 268,  287 => 206,  223 => 145,  156 => 81,  126 => 54,  106 => 37,  97 => 30,  85 => 23,  80 => 20,  78 => 19,  75 => 18,  69 => 15,  65 => 14,  61 => 12,  59 => 11,  54 => 9,  49 => 6,  45 => 5,  39 => 1,);
+        return array (  773 => 665,  706 => 601,  641 => 539,  577 => 478,  510 => 414,  481 => 388,  462 => 372,  392 => 305,  325 => 241,  260 => 179,  196 => 118,  133 => 58,  113 => 41,  104 => 34,  91 => 27,  86 => 24,  81 => 21,  79 => 20,  76 => 19,  70 => 16,  66 => 15,  62 => 13,  60 => 12,  54 => 9,  49 => 6,  45 => 5,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -886,8 +859,9 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
 
 <div class=\"box px-0\">
     <div class=\"bg-img-cover-center py-12 py-lg-17\"
-        style=\"background-image: url({{slide.slide_image|media}}\">
-        <div class=\"container container-xl pt-6 pb-7\">
+        style=\"background-image: url({{slide.slide_image|media}})\">
+
+        <div class=\"container container-xl pt-6 pb-7 col-md-5\">
             {% if (slide.slide_title or slide.slide_description) %}
             <div data-animate=\"fadeInDown\">
                 <p class=\"text-secondary mb-5 text-uppercase font-weight-600\"></p>
@@ -900,8 +874,11 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
             <a href=\"shop-page-04.html\" class=\"btn btn-secondary rounded bg-hover-primary border-0\"
                 data-animate=\"fadeInUp\">Shop Now</a>
             {% endif %}
-
-
+        </div>
+        <div class=\"col-md-7\">
+            <p>
+                <img src=\"http://127.0.0.1:8000/storage/app/media/child-image-slide/{{ slide.slide_title }}.png\" alt=\"\">
+            </p>
         </div>
     </div>
 </div>
@@ -958,40 +935,9 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
         <div class=\"box\">
             <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                 <div class=\"position-relative\">
-                    <img src=\"{{'assets/images/product-01.jpg'|theme}}\" alt=\"Facial cleanser\">
-                    <div class=\"card-img-overlay d-flex p-3\">
-                        <div>
-                            <span class=\"badge badge-primary\">-20%</span>
-                        </div>
-                        <div class=\"my-auto w-100 content-change-vertical\">
-                            <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"View products\"
-                                class=\"add-to-cart ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2\">
-                                <svg class=\"icon icon-shopping-bag-open-light fs-24\">
-                                    <use xlink:href=\"#icon-shopping-bag-open-light\"></use>
-                                </svg>
-                            </a>
-                            <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Quick view\"
-                                class=\"preview ml-auto d-md-flex align-items-center justify-content-center cursor-pointer text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2 d-none\">
-                                <span data-toggle=\"modal\" data-target=\"#quick-view\">
-                                    <svg class=\"icon icon-eye-light fs-24\">
-                                        <use xlink:href=\"#icon-eye-light\"></use>
-                                    </svg>
-                                </span>
-                            </a>
-                            <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Add to wishlist\"
-                                class=\"add-to-wishlist ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle mb-2\">
-                                <svg class=\"icon icon-star-light fs-24\">
-                                    <use xlink:href=\"#icon-star-light\"></use>
-                                </svg>
-                            </a>
-                            <a href=\"#\" data-toggle=\"tooltip\" data-placement=\"left\" title=\"Compare\"
-                                class=\"add-to-compare ml-auto d-flex align-items-center justify-content-center text-secondary bg-white hover-white bg-hover-secondary w-48px h-48px rounded-circle\">
-                                <svg class=\"icon icon-arrows-left-right-light fs-24\">
-                                    <use xlink:href=\"#icon-arrows-left-right-light\"></use>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                    <img src=\"https://www.siogyumolcs.hu/assets/img/img-index-category-hover.jpg\" alt=\"Facial cleanser\" style=\"opacity: 0;
+                    transition: opacity .4s;\">
+                    <img src=\"https://www.siogyumolcs.hu/storage/categories/JxmHLTnGfur1tCSPOAGCS72GlfC08U6yGFHst2dg/category_small.png\" alt=\"Facial cleanser\">
                 </div>
                 <div class=\"card-body pt-4 text-center\">
                     <p class=\"card-text font-weight-bold fs-16 mb-1 text-secondary\">
@@ -1019,7 +965,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
                 </div>
             </div>
         </div>
-        <div class=\"box\">
+        <!-- <div class=\"box\">
             <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                 <div class=\"position-relative\">
                     <img src=\"{{'assets/images/product-02.jpg'|theme}}\" alt=\"Bio-shroom Rejuvenating Serum\">
@@ -1266,17 +1212,17 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 </section>
 <section class=\"pt-9 pt-lg-10\">
-<div class=\"container container-xl\">
+<div class=\" \"  >
     <div class=\"row\">
         <div class=\"col-12 col-lg-6 mb-6 mb-lg-0\">
             <div class=\"card border-0 banner banner-01 hover-zoom-in hover-shine\" data-animate=\"fadeInUp\">
                 <div class=\"card-img bg-img-cover-center\"
-                    style=\"background-image: url({{'assets/images/banner-01.jpg'|theme}});\"></div>
+                    style=\"background-image: url({{'assets/images/banner-01.jpg'|theme}});    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 50%); \" ></div>
                 <div class=\"card-img-overlay d-inline-flex flex-column p-6 p-md-8\">
                     <h6 class=\"card-subtitle mb-2 text-secondary letter-spacing-01\">NEW COLLECTION</h6>
                     <h3 class=\"card-title fs-34 lh-129\" style=\"max-width: 310px\">Intensive Glow C+ Serum
@@ -1292,7 +1238,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
         <div class=\"col-12 col-lg-6\">
             <div class=\"card border-0 banner banner-01 hover-zoom-in hover-shine\" data-animate=\"fadeInUp\">
                 <div class=\"card-img bg-img-cover-center\"
-                    style=\"background-image: url({{'assets/images/banner-02.jpg'|theme}});\"></div>
+                    style=\"background-image: url({{'assets/images/banner-02.jpg'|theme}});     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 50%);\"></div>
                 <div class=\"card-img-overlay d-inline-flex flex-column p-6 p-md-8\">
                     <h3 class=\"card-title fs-34 lh-129 mb-2\">25% off Everything</h3>
                     <p class=\"card-text text-secondary font-weight-500\" style=\"max-width: 236px;\">
@@ -1634,8 +1580,8 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
     
     public function checkSecurity()
     {
-        static $tags = array("for" => 5, "if" => 11);
-        static $filters = array("media" => 9, "escape" => 14, "theme" => 37);
+        static $tags = array("for" => 5, "if" => 12);
+        static $filters = array("media" => 9, "escape" => 15, "theme" => 41);
         static $functions = array();
 
         try {

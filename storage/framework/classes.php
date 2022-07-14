@@ -155,4 +155,6 @@
   'peterhegman\\slickslider\\Controllers\\slideshows' => 'plugins\\peterhegman\\slickslider\\controllers\\slideshows.php',
   'PeterHegman\\SlickSlider\\Models\\SlideShows' => 'plugins\\peterhegman\\slickslider\\models\\SlideShows.php',
   'rainlab\\builder\\Plugin' => 'plugins\\rainlab\\builder\\Plugin.php',
+  'backend\\Controllers\\media' => 'modules\\backend\\controllers\\media.php',
+  'inetis\\dump\\Plugin' => 'plugins\\inetis\\dump\\Plugin.php',
 );

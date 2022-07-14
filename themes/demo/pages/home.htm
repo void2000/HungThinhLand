@@ -14,8 +14,9 @@ data-slick-options='{"slidesToShow": 1,"infinite":true,"autoplay":true,"dots":tr
 
 <div class="box px-0">
     <div class="bg-img-cover-center py-12 py-lg-17"
-        style="background-image: url({{slide.slide_image|media}}">
-        <div class="container container-xl pt-6 pb-7">
+        style="background-image: url({{slide.slide_image|media}})">
+
+        <div class="container container-xl pt-6 pb-7 col-md-5">
             {% if (slide.slide_title or slide.slide_description) %}
             <div data-animate="fadeInDown">
                 <p class="text-secondary mb-5 text-uppercase font-weight-600"></p>
@@ -28,8 +29,11 @@ data-slick-options='{"slidesToShow": 1,"infinite":true,"autoplay":true,"dots":tr
             <a href="shop-page-04.html" class="btn btn-secondary rounded bg-hover-primary border-0"
                 data-animate="fadeInUp">Shop Now</a>
             {% endif %}
-
-
+        </div>
+        <div class="col-md-7">
+            <p>
+                <img src="http://127.0.0.1:8000/storage/app/media/child-image-slide/{{ slide.slide_title }}.png" alt="">
+            </p>
         </div>
     </div>
 </div>
