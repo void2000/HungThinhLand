@@ -12,6 +12,7 @@ data-slick-options='{"slidesToShow": 1,"infinite":true,"autoplay":true,"dots":tr
 
 {% for slide in slider.slides.slideShows.slide_show_content %}
 
+
 <div class="box px-0">
     <div class="bg-img-cover-center py-12 py-lg-17"
         style="background-image: url({{slide.slide_image|media}})">
@@ -32,16 +33,13 @@ data-slick-options='{"slidesToShow": 1,"infinite":true,"autoplay":true,"dots":tr
         </div>
         <div class="col-md-7">
             <p>
-                <img src="http://127.0.0.1:8000/storage/app/media/child-image-slide/{{ slide.slide_title }}.png" alt="">
+                <img src="{{slide.Child_Image|media}}" alt="">
             </p>
         </div>
     </div>
 </div>
 
 {% endfor %}
-
-
-
 
 <!--
 <div class="box px-0">
@@ -79,7 +77,6 @@ data-slick-options='{"slidesToShow": 1,"infinite":true,"autoplay":true,"dots":tr
     </div>
 </div>
 -->
-
 </section>
 <section class="pt-md-11 pt-9">
 <div class="container container-xl">

@@ -1,4 +1,8 @@
 fields:
+    Child_Image:
+        label: 'Child Image'
+        span: auto
+        type: text
 tabs:
     fields:
         slide_show_title:
@@ -23,6 +27,11 @@ tabs:
                         label: 'peterhegman.slickslider::lang.slickslider.slide_title'
                         span: auto
                         type: text
+                    Child_Image:
+                        label: 'Child Imge'
+                        mode: file
+                        span: auto
+                        type: mediafinder
                     slide_link:
                         label: 'peterhegman.slickslider::lang.slickslider.slide_link'
                         span: right
