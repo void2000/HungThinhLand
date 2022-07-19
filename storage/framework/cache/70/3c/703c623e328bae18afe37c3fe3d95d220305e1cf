@@ -1,0 +1,171 @@
+1658243544a:1:{s:13:"blog-list.htm";a:12:{s:8:"fileName";s:13:"blog-list.htm";s:7:"content";s:3051:"title = "Blog list"
+url = "/blog-list"
+layout = "default"
+description = "blog list"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/category-blog"
+postPage = "blog/single-blog"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "blog/category-blog"
+
+==
+<main id="content">
+<section class="py-2 bg-gray-2">
+<div class="container">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb breadcrumb-site py-0 d-flex justify-content-center">
+<li class="breadcrumb-item"><a class="text-decoration-none text-body" href="index.html">Home</a>
+</li>
+<li class="breadcrumb-item active pl-0 d-flex align-items-center" aria-current="page">Blog Update</li>
+</ol>
+</nav>
+</div>
+</section>
+<section class="pt-9 pb-lg-13 pb-11">
+<div class="container">
+<h2 class="text-center mb-8" data-animate="fadeInUp">Blog Update</h2>
+<div class="row">
+
+    {% set posts = blogPosts.posts %}
+
+
+{% for post in posts %}
+
+<div class="col-lg-4 col-md-6 mb-7" data-animate="fadeInUp">
+<div class="card border-0 text-center">
+<div class="position-relative d-flex align-items-end card-img">
+
+{% if post.featured_images.count %}
+{% for image in post.featured_images %}
+<a href="{{ post.url }}" class="hover-shine">
+    <img src="{{ image.path }}" alt="{{ image.description != null ? image.description : image.filename }}">
+</a>
+{%endfor%}
+{% endif %}
+
+{% if post.categories.count %}
+{% for category in post.categories %}  
+<a href="#" class="badge pos-fixed-bottom-n12-center text-secondary bg-gray bg-hover-secondary hover-white position-absolute fs-15 py-1 px-3 font-weight-500">
+    {{ category.name }}
+</a>
+{% endfor %}
+{% endif %}
+
+</div>
+<div class="card-body p-0">
+<h3 class="card-title mb-0 mt-6 fs-24 lh-15 mx-xl-3">
+<a href="{{ post.url }}" class="text-decoration-none">{{ post.title }}</a>
+</h3>
+<ul class="list-inline mt-5 fs-15 lh-1">
+<li class="list-inline-item pr-3 border-right border-2x">By <a class="text-decoration-none" href="#">{{ post.user.first_name}} {{ post.user.last_name}}</a>
+</li>
+<li class="list-inline-item pr-3">{{ post.published_at|date('d M, Y') }}</li>
+</ul>
+</div>
+</div>
+</div>
+{% endfor %}
+
+
+</div>
+<nav class="pt-2">
+<ul class="pagination justify-content-center align-items-center mb-0 fs-16 font-weight-600">
+<li class="page-item fs-18 d-none d-sm-block">
+<a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex" href="#" tabindex="-1"><i class="far fa-angle-double-left"></i></a>
+</li>
+<li class="page-item">
+<a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex" href="#">1</a>
+</li>
+
+<li class="page-item fs-18 d-none d-sm-block">
+<a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex" href="#"><i class="far fa-angle-double-right"></i></a>
+</li>
+</ul>
+</nav>
+</div>
+</section>
+</main>";s:5:"mtime";i:1658242943;s:6:"markup";s:2647:"<main id="content">
+<section class="py-2 bg-gray-2">
+<div class="container">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb breadcrumb-site py-0 d-flex justify-content-center">
+<li class="breadcrumb-item"><a class="text-decoration-none text-body" href="index.html">Home</a>
+</li>
+<li class="breadcrumb-item active pl-0 d-flex align-items-center" aria-current="page">Blog Update</li>
+</ol>
+</nav>
+</div>
+</section>
+<section class="pt-9 pb-lg-13 pb-11">
+<div class="container">
+<h2 class="text-center mb-8" data-animate="fadeInUp">Blog Update</h2>
+<div class="row">
+
+    {% set posts = blogPosts.posts %}
+
+
+{% for post in posts %}
+
+<div class="col-lg-4 col-md-6 mb-7" data-animate="fadeInUp">
+<div class="card border-0 text-center">
+<div class="position-relative d-flex align-items-end card-img">
+
+{% if post.featured_images.count %}
+{% for image in post.featured_images %}
+<a href="{{ post.url }}" class="hover-shine">
+    <img src="{{ image.path }}" alt="{{ image.description != null ? image.description : image.filename }}">
+</a>
+{%endfor%}
+{% endif %}
+
+{% if post.categories.count %}
+{% for category in post.categories %}  
+<a href="#" class="badge pos-fixed-bottom-n12-center text-secondary bg-gray bg-hover-secondary hover-white position-absolute fs-15 py-1 px-3 font-weight-500">
+    {{ category.name }}
+</a>
+{% endfor %}
+{% endif %}
+
+</div>
+<div class="card-body p-0">
+<h3 class="card-title mb-0 mt-6 fs-24 lh-15 mx-xl-3">
+<a href="{{ post.url }}" class="text-decoration-none">{{ post.title }}</a>
+</h3>
+<ul class="list-inline mt-5 fs-15 lh-1">
+<li class="list-inline-item pr-3 border-right border-2x">By <a class="text-decoration-none" href="#">{{ post.user.first_name}} {{ post.user.last_name}}</a>
+</li>
+<li class="list-inline-item pr-3">{{ post.published_at|date('d M, Y') }}</li>
+</ul>
+</div>
+</div>
+</div>
+{% endfor %}
+
+
+</div>
+<nav class="pt-2">
+<ul class="pagination justify-content-center align-items-center mb-0 fs-16 font-weight-600">
+<li class="page-item fs-18 d-none d-sm-block">
+<a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex" href="#" tabindex="-1"><i class="far fa-angle-double-left"></i></a>
+</li>
+<li class="page-item">
+<a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex" href="#">1</a>
+</li>
+
+<li class="page-item fs-18 d-none d-sm-block">
+<a class="page-link rounded-circle w-40px h-40 p-0 justify-content-center align-items-center d-flex" href="#"><i class="far fa-angle-double-right"></i></a>
+</li>
+</ul>
+</nav>
+</div>
+</section>
+</main>";s:4:"code";N;s:5:"title";s:9:"Blog list";s:3:"url";s:10:"/blog-list";s:6:"layout";s:7:"default";s:11:"description";s:9:"blog list";s:9:"is_hidden";s:1:"0";s:9:"blogPosts";a:6:{s:10:"pageNumber";s:11:"{{ :page }}";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:18:"blog/category-blog";s:8:"postPage";s:16:"blog/single-blog";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:18:"blog/category-blog";}}}

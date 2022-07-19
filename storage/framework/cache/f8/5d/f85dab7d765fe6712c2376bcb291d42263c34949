@@ -1,4 +1,4 @@
-1658220565a:1:{s:14:"trang-chu.yaml";a:7:{s:8:"fileName";s:14:"trang-chu.yaml";s:7:"content";s:1731:"items:
+1658243511a:1:{s:14:"trang-chu.yaml";a:7:{s:8:"fileName";s:14:"trang-chu.yaml";s:7:"content";s:1591:"items:
     -
         title: 'Trang chủ'
         nesting: null
@@ -12,16 +12,6 @@
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
-        items:
-            -
-                title: 'New menu item'
-                type: url
-                url: /
-                code: ''
-                viewBag:
-                    isHidden: '0'
-                    cssClass: ''
-                    isExternal: '0'
     -
         title: 'Về chúng tôi'
         nesting: null
@@ -38,10 +28,10 @@
     -
         title: 'Sản phẩm'
         nesting: null
-        type: url
-        url: /
+        type: cms-page
+        url: null
         code: ''
-        reference: null
+        reference: shop-product
         cmsPage: null
         replace: null
         viewBag:
@@ -74,5 +64,14 @@
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
+    -
+        title: Blog
+        type: cms-page
+        code: ''
+        reference: blog-list
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
 name: 'trang chu'
-";s:5:"mtime";i:1656913381;s:6:"markup";N;s:4:"code";N;s:4:"name";N;s:5:"items";a:0:{}}}
+";s:5:"mtime";i:1658221995;s:6:"markup";N;s:4:"code";N;s:4:"name";N;s:5:"items";a:0:{}}}
