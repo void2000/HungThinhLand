@@ -199,4 +199,13 @@
   'RainLab\\Builder\\Classes\\ControlDesignTimeProviderBase' => 'plugins\\rainlab\\builder\\classes\\ControlDesignTimeProviderBase.php',
   'RainLab\\Builder\\Widgets\\DefaultControlDesignTimeProvider' => 'plugins\\rainlab\\builder\\widgets\\DefaultControlDesignTimeProvider.php',
   'RainLab\\Builder\\Classes\\MigrationColumnType' => 'plugins\\rainlab\\builder\\classes\\MigrationColumnType.php',
+  'RainLab\\Builder\\Components\\RecordList' => 'plugins\\rainlab\\builder\\components\\RecordList.php',
+  'RainLab\\Builder\\Components\\RecordDetails' => 'plugins\\rainlab\\builder\\components\\RecordDetails.php',
+  'rainlab\\pages\\Controllers\\index' => 'plugins\\rainlab\\pages\\controllers\\index.php',
+  'RainLab\\Pages\\Widgets\\PageList' => 'plugins\\rainlab\\pages\\widgets\\PageList.php',
+  'RainLab\\Pages\\Widgets\\MenuList' => 'plugins\\rainlab\\pages\\widgets\\MenuList.php',
+  'RainLab\\Pages\\Widgets\\TemplateList' => 'plugins\\rainlab\\pages\\widgets\\TemplateList.php',
+  'RainLab\\Pages\\Widgets\\SnippetList' => 'plugins\\rainlab\\pages\\widgets\\SnippetList.php',
+  'RainLab\\Pages\\Classes\\Content' => 'plugins\\rainlab\\pages\\classes\\Content.php',
+  'backend\\Controllers\\auth' => 'modules\\backend\\controllers\\auth.php',
 );
