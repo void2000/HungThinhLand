@@ -86,12 +86,22 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
             // line 25
             echo "        </div>
         <div class=\"col-md-7\">
-            <p>
-                <img src=\"";
-            // line 28
-            echo $this->extensions['System\Twig\Extension']->mediaFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["slide"], "Child_Image", [], "any", false, false, true, 28), 28, $this->source));
+            <style>
+                #child-img{
+
+                }
+                #child-img1{
+
+                }
+            </style>
+            <!-- <div id=\"child-img\">
+                <img id=\"child-img1\" src=\"";
+            // line 36
+            echo $this->extensions['System\Twig\Extension']->mediaFilter($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, $context["slide"], "Child_Image", [], "any", false, false, true, 36), 36, $this->source));
             echo "\" alt=\"\">
-            </p>
+            </div> -->
+                
+           
         </div>
     </div>
 </div>
@@ -101,13 +111,13 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['slide'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 35
+        // line 45
         echo "
 <!--
 <div class=\"box px-0\">
     <div class=\"bg-img-cover-center py-12 py-lg-17\"
         style=\"background-image: url(";
-        // line 39
+        // line 49
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/bg-slider-02.jpg");
         echo ");\">
         <div class=\"container container-xl pt-6 pb-7\">
@@ -127,7 +137,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
 <div class=\"box px-0\">
     <div class=\"bg-img-cover-center py-12 py-lg-17\"
         style=\"background-image: url(";
-        // line 56
+        // line 66
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/bg-slider-03.jpg");
         echo ");\">
         <div class=\"container container-xl pt-6 pb-7\">
@@ -189,7 +199,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
             <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                 <div class=\"position-relative\">
                     <img src=\"";
-        // line 115
+        // line 125
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-02.jpg");
         echo "\" alt=\"Bio-shroom Rejuvenating Serum\">
                     <div class=\"card-img-overlay d-flex p-3\">
@@ -253,7 +263,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
             <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                 <div class=\"position-relative\">
                     <img src=\"";
-        // line 176
+        // line 186
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-03.jpg");
         echo "\" alt=\"Coffee Bean Caffeine Eye Cream\">
                     <div class=\"card-img-overlay d-flex p-3\">
@@ -318,7 +328,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
             <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                 <div class=\"position-relative\">
                     <img src=\"";
-        // line 238
+        // line 248
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-04.jpg");
         echo "\" alt=\"Coffee Bean Caffeine Eye Cream\">
                     <div class=\"card-img-overlay d-flex p-3\">
@@ -385,7 +395,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
             <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                 <div class=\"position-relative\">
                     <img src=\"";
-        // line 302
+        // line 312
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-05.jpg");
         echo "\" alt=\"Facial cleanser\">
                     <div class=\"card-img-overlay d-flex p-3\">
@@ -455,7 +465,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
             <div class=\"card border-0 banner banner-01 hover-zoom-in hover-shine\" data-animate=\"fadeInUp\">
                 <div class=\"card-img bg-img-cover-center\"
                     style=\"background-image: url(";
-        // line 369
+        // line 379
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/banner-01.jpg");
         echo ");    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 50%); \" ></div>
                 <div class=\"card-img-overlay d-inline-flex flex-column p-6 p-md-8\">
@@ -474,7 +484,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
             <div class=\"card border-0 banner banner-01 hover-zoom-in hover-shine\" data-animate=\"fadeInUp\">
                 <div class=\"card-img bg-img-cover-center\"
                     style=\"background-image: url(";
-        // line 385
+        // line 395
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/banner-02.jpg");
         echo ");     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 50%);\"></div>
                 <div class=\"card-img-overlay d-inline-flex flex-column p-6 p-md-8\">
@@ -503,7 +513,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
                 <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                     <div class=\"position-relative\">
                         <img src=\"";
-        // line 411
+        // line 421
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-01.jpg");
         echo "\" alt=\"Facial cleanser\">
                         <div class=\"card-img-overlay d-flex p-3\">
@@ -570,7 +580,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
                 <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                     <div class=\"position-relative\">
                         <img src=\"";
-        // line 475
+        // line 485
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-02.jpg");
         echo "\" alt=\"Bio-shroom Rejuvenating Serum\">
                         <div class=\"card-img-overlay d-flex p-3\">
@@ -634,7 +644,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
                 <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                     <div class=\"position-relative\">
                         <img src=\"";
-        // line 536
+        // line 546
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-03.jpg");
         echo "\" alt=\"Coffee Bean Caffeine Eye Cream\">
                         <div class=\"card-img-overlay d-flex p-3\">
@@ -699,7 +709,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
                 <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                     <div class=\"position-relative\">
                         <img src=\"";
-        // line 598
+        // line 608
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-04.jpg");
         echo "\" alt=\"Coffee Bean Caffeine Eye Cream\">
                         <div class=\"card-img-overlay d-flex p-3\">
@@ -766,7 +776,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
                 <div class=\"card border-0 product\" data-animate=\"fadeInUp\">
                     <div class=\"position-relative\">
                         <img src=\"";
-        // line 662
+        // line 672
         echo $this->extensions['Cms\Twig\Extension']->themeFilter("assets/images/product-05.jpg");
         echo "\" alt=\"Facial cleanser\">
                         <div class=\"card-img-overlay d-flex p-3\">
@@ -843,7 +853,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
 
     public function getDebugInfo()
     {
-        return array (  770 => 662,  703 => 598,  638 => 536,  574 => 475,  507 => 411,  478 => 385,  459 => 369,  389 => 302,  322 => 238,  257 => 176,  193 => 115,  131 => 56,  111 => 39,  105 => 35,  92 => 28,  87 => 25,  82 => 22,  80 => 21,  77 => 20,  71 => 17,  67 => 16,  63 => 14,  61 => 13,  55 => 10,  49 => 6,  45 => 5,  39 => 1,);
+        return array (  780 => 672,  713 => 608,  648 => 546,  584 => 485,  517 => 421,  488 => 395,  469 => 379,  399 => 312,  332 => 248,  267 => 186,  203 => 125,  141 => 66,  121 => 49,  115 => 45,  100 => 36,  87 => 25,  82 => 22,  80 => 21,  77 => 20,  71 => 17,  67 => 16,  63 => 14,  61 => 13,  55 => 10,  49 => 6,  45 => 5,  39 => 1,);
     }
 
     public function getSourceContext()
@@ -874,9 +884,19 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
             {% endif %}
         </div>
         <div class=\"col-md-7\">
-            <p>
-                <img src=\"{{slide.Child_Image|media}}\" alt=\"\">
-            </p>
+            <style>
+                #child-img{
+
+                }
+                #child-img1{
+
+                }
+            </style>
+            <!-- <div id=\"child-img\">
+                <img id=\"child-img1\" src=\"{{slide.Child_Image|media}}\" alt=\"\">
+            </div> -->
+                
+           
         </div>
     </div>
 </div>
@@ -1575,7 +1595,7 @@ data-slick-options='{\"slidesToShow\": 1,\"infinite\":true,\"autoplay\":true,\"d
     public function checkSecurity()
     {
         static $tags = array("for" => 5, "if" => 13);
-        static $filters = array("media" => 10, "escape" => 16, "theme" => 39);
+        static $filters = array("media" => 10, "escape" => 16, "theme" => 49);
         static $functions = array();
 
         try {
