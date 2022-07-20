@@ -151,7 +151,6 @@ class __TwigTemplate_f8d912a564188bfff89b96908b8cfbd7ef5222752fa1e2dbdd0730a5751
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 57
         echo "
-
 </div>
 <nav class=\"pt-2\">
 <ul class=\"pagination justify-content-center align-items-center mb-0 fs-16 font-weight-600\">
@@ -245,7 +244,6 @@ class __TwigTemplate_f8d912a564188bfff89b96908b8cfbd7ef5222752fa1e2dbdd0730a5751
 </div>
 </div>
 {% endfor %}
-
 
 </div>
 <nav class=\"pt-2\">

@@ -1,4 +1,4 @@
-1658301417a:1:{s:13:"blog-list.htm";a:12:{s:8:"fileName";s:13:"blog-list.htm";s:7:"content";s:3051:"title = "Blog list"
+1658302870a:1:{s:13:"blog-list.htm";a:12:{s:8:"fileName";s:13:"blog-list.htm";s:7:"content";s:3049:"title = "Blog list"
 url = "/blog-list"
 layout = "default"
 description = "blog list"
@@ -75,7 +75,6 @@ categoryPage = "blog/category-blog"
 </div>
 {% endfor %}
 
-
 </div>
 <nav class="pt-2">
 <ul class="pagination justify-content-center align-items-center mb-0 fs-16 font-weight-600">
@@ -93,7 +92,7 @@ categoryPage = "blog/category-blog"
 </nav>
 </div>
 </section>
-</main>";s:5:"mtime";i:1658242943;s:6:"markup";s:2647:"<main id="content">
+</main>";s:5:"mtime";i:1658301302;s:6:"markup";s:2645:"<main id="content">
 <section class="py-2 bg-gray-2">
 <div class="container">
 <nav aria-label="breadcrumb">
@@ -149,7 +148,6 @@ categoryPage = "blog/category-blog"
 </div>
 </div>
 {% endfor %}
-
 
 </div>
 <nav class="pt-2">
